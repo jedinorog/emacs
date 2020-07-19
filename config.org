@@ -182,6 +182,10 @@
    (global-set-key (kbd "C-x C-e") 'reload-init-file)
    #+END_SRC
 ** Minor settings
+*** line number mode
+#+BEGIN_SRC emacs-lisp
+(display-line-numbers-mode)
+#+END_SRC
 *** line-break with
     #+BEGIN_SRC emacs-lisp
     (setq-default fill-column 70)
