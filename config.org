@@ -106,17 +106,7 @@
 	 (point-at-eol)))))
    (global-set-key (kbd "C-c w l") 'copy-whole-line)
     #+END_SRC
-** modline
-   #+BEGIN_SRC emacs-lisp
-   (use-package diminish
-     :ensure t
-     :init
-     (diminish 'eldoc-mode)
-     (diminish 'which-key-mode)
-     (diminish 'org-src-mode)
-     (diminish 'company-mode)
-     (diminish 'rainbow-mode))
-   #+END_SRC
+
 ** Minor stuff
    #+BEGIN_SRC emacs-lisp
  ;;promt to suggest possible macros:
@@ -468,4 +458,15 @@
    (use-package swiper
      :ensure t
      :bind ("C-s" . swiper))
+   #+END_SRC
+** modline
+   #+BEGIN_SRC emacs-lisp
+   (use-package diminish
+     :ensure t
+     :init
+     (diminish 'eldoc-mode)
+     (diminish 'which-key-mode)
+     (diminish 'org-src-mode)
+     (diminish 'company-mode)
+     (diminish 'rainbow-mode))
    #+END_SRC
