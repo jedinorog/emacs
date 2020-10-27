@@ -61,7 +61,7 @@
     #+END_SRC
 *** enable ibuffer
     #+BEGIN_SRC emacs-lisp
- (global-set-key (kbd "C-x C-b") 'ibuffer)
+    (global-set-key (kbd "C-x C-b") 'ibuffer)
     #+END_SRC
 
 *** kill all buffers
@@ -116,14 +116,13 @@
    (which-key-mode))
    #+END_SRC
 
-
-
    #+BEGIN_SRC emacs-lisp
  (setq inhibit-startup-message t)
    #+END_SRC
 
-
-
+   #+BEGIN_SRC emacs-lisp
+ (setq visible-bell t)
+   #+END_SRC
    #+BEGIN_SRC emacs-lisp
  (defalias 'yes-or-no-p 'y-or-n-p)
    #+END_SRC
